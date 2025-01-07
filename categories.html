@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHDplus - إدارة الأقسام</title>
+    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- الهيدر -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>UHDplus - إدارة الأقسام</h1>
+            <div class="header-actions">
+                <a href="dashboard.html" class="header-btn">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="main-content">
+        <h2>إدارة الأقسام</h2>
+        <form id="sectionForm">
+            <div class="form-group">
+                <label for="sectionName">اسم القسم</label>
+                <input type="text" id="sectionName" required>
+            </div>
+            <button type="submit" class="submit-btn">إضافة قسم</button>
+        </form>
+
+        <!-- عرض الأقسام -->
+        <div class="sections-grid" id="sectionsGrid">
+            <!-- الأقسام ستتم إضافتها هنا ديناميكيًا -->
+        </div>
+    </main>
+
+    <script src="categories.js"></script>
+    <script src="dashboars.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الفيلم</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="movies-details.css">
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">UHDplus</div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="movies.html">الأفلام</a></li>
+                <li><a href="series.html">المسلسلات</a></li>
+                <li><a href="dashboard/dashboard.html">الإعدادات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Banner Section -->
+        <section class="banner">
+            <div class="banner-poster" id="bannerPoster"></div>
+            <div class="banner-overlay"></div>
+        </section>
+
+        <!-- Movie Details -->
+        <section class="details">
+            <div class="content-wrapper">
+                <div class="vertical-poster" id="verticalPoster"></div>
+                <div class="info">
+                    <h1 id="movieTitle"></h1>
+                    <p id="movieDescription"></p>
+                    <div class="meta-info">
+                        <span id="movieYear"></span>
+                        <span id="movieRating"></span>
+                        <span id="movieCategories"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Player -->
+        <section class="video-player">
+            <video id="player" playsinline controls>
+                <source id="videoSource" type="video/mp4" />
+            </video>
+        </section>
+    </main>
+
+    <!-- Plyr JS -->
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="movies-details.js"></script>
+</body>
+</html>

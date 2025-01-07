@@ -1,0 +1,169 @@
+:root {
+    --primary-color: #8B0000;
+    --secondary-color: #111111;
+    --accent-color: #ff3333;
+    --text-color: #ffffff;
+    --card-bg: #1a1a1a;
+    --input-bg: #2a2a2a;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --header-bg: rgba(0, 0, 0, 0.9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* الهيدر */
+.main-header {
+    background: var(--header-bg);
+    padding: 1rem 2rem;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    border-radius: 50px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 51, 51, 0.3);
+}
+
+/* المحتوى الرئيسي */
+.main-content {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+}
+
+/* شريط البحث والفلترة */
+.filter-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.filter-bar input {
+    padding: 0.8rem;
+    background: var(--input-bg);
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 1rem;
+    flex: 1;
+}
+
+.filter-bar button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.filter-bar button:hover {
+    opacity: 0.9;
+}
+
+/* جدول الملفات */
+.files-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.files-table th,
+.files-table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.files-table th {
+    background: var(--primary-color);
+    font-weight: bold;
+}
+
+.files-table tbody tr {
+    border-bottom: 1px solid #333;
+}
+
+.files-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.files-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.file-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.file-link:hover {
+    opacity: 0.8;
+}
+
+.attach-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.attach-btn:hover {
+    opacity: 0.9;
+}
